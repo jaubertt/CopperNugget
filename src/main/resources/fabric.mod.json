@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "coppernugget",
+	"version": "${version}",
+	"name": "CopperNugget",
+	"description": "A simple mod to add Copper Nuggets",
+	"authors": [
+		"Jaubert"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/coppernugget/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"coppernugget.CopperNugget"
+		],
+		"fabric-datagen": [
+			"coppernugget.CopperNuggetDataGenerator"
+		],
+		"client": [
+			"coppernugget.CopperNuggetClient"
+		]
+	},
+	"mixins": [
+		"coppernugget.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
